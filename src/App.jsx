@@ -14,9 +14,6 @@ function App() {
     .then((response) => {console.log(response.data.books); setBooks(response.data.books) })
   }, [])
 
-  useEffect(() => {
-    console.log(books)
-  }, [books])
 
 
   return (
